@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+.newList a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newList a span {
+    flex-grow: 3;
+}
+
+.newList a .el-icon-close {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* .forbid {
+    display: none;
+} */
+
+html,
+body,
+#app {
+    height: 100%;
+    overflow: hidden;
+}
+
+.el-card__body {
+    padding: 6px 8px 6px 4px !important;
+}
+
+@media screen and (max-width: 886px) {
+    .el-form {
+        width: 100% !important;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    #main {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #rightList {
+        transition: width 0.3s;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    .rightmax {
+        width: 70% !important;
+    }
+
+    #side {
+        transition: width 0.3s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .sidemin {
+        width: 0 !important;
+    }
+
+    .sidemax {
+        width: 70% !important;
+    }
+
+    .iconSide {
+        display: block !important;
+    }
+
+    .filter {
+        filter: brightness(50%);
+        background-color: black;
+        opacity: 50%;
+    }
+
+    .bri {
+        filter: brightness(100%);
+        background-color: black;
+        opacity: 0;
+    }
+
+    .forbid {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+    }
+}
